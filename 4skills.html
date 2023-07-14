@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Checkboxes</title>
+    <style>
+      body {
+            background: linear-gradient(to top left, #66cc66, #99ff99) no-repeat;
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 20px;
+        }
+      .skill-group {
+          background: linear-gradient(to bottom right, #e6f3e6, #c7eac7);
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+      }
+
+      .skill {
+          display: inline-block;
+          width: 20%;
+          margin-bottom: 10px;
+      }
+
+      .submit-button {
+          float:right;
+          display: block;
+          margin-top: 20px;
+          background-color: #eb3508;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+  </style>
+  <body>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="Java" /> Java </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Python" /> Python
+      </label>
+    </div>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="C++" /> C++ </label>
+    </div>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="C#" /> C# </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="JavaScript" /> JavaScript
+      </label>
+    </div>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="Ruby" /> Ruby </label>
+    </div>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="PHP" /> PHP </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Swift" /> Swift
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Kotlin" /> Kotlin
+      </label>
+    </div>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="Go" /> Go </label>
+    </div>
+    <div class="skill">
+      <label> <input type="checkbox" name="skills" value="Rust" /> Rust </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="HTML/CSS" /> HTML/CSS
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="React" /> React
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Angular" /> Angular
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Vue.js" /> Vue.js
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Bootstrap" /> Bootstrap
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Foundation" /> Foundation
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Node.js" /> Node.js
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Django" /> Django
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Flask" /> Flask
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="RESTful API development" />
+        RESTful
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input
+          type="checkbox"
+          name="skills"
+          value="SQL (Structured Query Language)"
+        />
+        SQL (Structured Query Language)
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="MySQL" /> MySQL
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="PostgreSQL" /> PostgreSQL
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="Oracle" /> Oracle
+      </label>
+    </div>
+    <div class="skill">
+      <label>
+        <input type="checkbox" name="skills" value="MongoDB" /> MongoDB
+      </label>
+    </div>
+    <button class="submit-button"onclick="getSelectedValues()">Submit</button>
+    <script>
+      function getSelectedValues() {
+        var checkboxes = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        );
+        var selectedValues = [];
+
+        for (var i = 0; i < checkboxes.length; i++) {
+          selectedValues.push(checkboxes[i].value);
+        }
+
+        console.log(selectedValues);
+       fetch('hhtp///user/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+        setTimeout(function() {
+          window.location.href = "index.html", delayInMilliseconds;
+       },3000);
+      }
+
+    </script>
+  </body>
+</html>
